@@ -2,8 +2,6 @@
 
 This project is an expanded version of my portfolio site that will act as a homebase of sorts for my own projects. It will include things like a list of what extensions I like in my VSCode setup, or a list of bookmarks I've been meaning to go back to. 
 
-
-
 ## Install and Develop on this project: 
 1. ``node --version``` should equal 10.5.x
 2. Gatsby should be installed.
@@ -30,3 +28,6 @@ This project is an expanded version of my portfolio site that will act as a home
     - [Gatsby v2 beta docs](https://next.gatsbyjs.org/docs/)
         - [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
     - [Github](https://github.com/gatsbyjs/gatsby)
+    - [Life After Layouts](https://next.gatsbyjs.org/blog/2018-06-08-life-after-layouts/)
+- **Git**
+    - [Git Tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
