@@ -1,14 +1,18 @@
 import React from 'react'
 import { StaticQuery, Link } from 'gatsby'
 import styled from 'react-emotion'
-
-// TODO: Move image URL to gatsby-config so all information is coming from there.
-import michelleImg from '../../static/img/michelle.png'
+import { withPrefix } from 'gatsby-link'
 
 const UserImage = styled('img')`
   padding: 0;
   width: 100px;
 `
+      
+// Base Social URLs
+const twitterURL = 'https://twitter.com/'
+const githubURL = 'https://github.com/'
+const instagramURL = 'https://instagram.com/'
+const linkedinURL = 'https://linkedin.com/in/'
 
 const HCard = ({ data }) => (
     <StaticQuery
@@ -20,9 +24,16 @@ const HCard = ({ data }) => (
                             name,
                             title,
                             siteURL,
+                            image,
                             address {
                                 city,
                                 state
+                            },
+                            social {
+                                twitter,
+                                github,
+                                instagram,
+                                linkedin
                             }
                         }
                     }
@@ -31,10 +42,15 @@ const HCard = ({ data }) => (
         `}
         render={data => (
             <div className='h-card'>
-            <UserImage src={michelleImg} alt='Illustration of Michelle' />
+            <UserImage 
+            src={withPrefix(data.site.siteMetadata.author.image)} 
+            alt=''
+            className='u-photo'
+             />
                 <p>
                     <Link 
                         className='u-url' 
+                        rel='me'
                         to={data.site.siteMetadata.author.siteURL}
                     >
                         <span className='p-name'>
@@ -55,6 +71,48 @@ const HCard = ({ data }) => (
                         {data.site.siteMetadata.author.address.state}
                     </span>
                 </p>
+                <ul>
+                    <li>
+                        Twitter: 
+                        <a
+                            className='u-url'
+                            rel='me'
+                            href={twitterURL + data.site.siteMetadata.author.social.twitter}
+                        >
+                            @{data.site.siteMetadata.author.social.twitter}
+                        </a>
+                    </li>
+                    <li>
+                        GitHub: 
+                        <a
+                            className='u-url'
+                            rel='me'
+                            href={githubURL + data.site.siteMetadata.author.social.github}
+                        >
+                            @{data.site.siteMetadata.author.social.github}
+                        </a>
+                    </li>
+                    <li>
+                        Instagram: 
+                        <a
+                            className='u-url'
+                            rel='me'
+                            href={instagramURL + data.site.siteMetadata.author.social.instagram}
+                        >
+                            @{data.site.siteMetadata.author.social.instagram}
+                        </a>
+                    </li>
+                    <li>
+                        LinkedIn: 
+                        <a
+                            className='u-url'
+                            rel='me'
+                            href={linkedinURL + data.site.siteMetadata.author.social.linkedin}
+                        >
+                            @{data.site.siteMetadata.author.social.linkedin}
+                        </a>
+                    </li>
+                </ul>
             </div>
         )}
     />

@@ -5,9 +5,16 @@ module.exports = {
       name: 'Michelle J Levine',
       title: 'Front End Web Developer & Prototyper',
       siteURL: 'http://michellejl.com',
+      image: 'img/michelle.png',
       address: {
         city: 'Portland',
         state: 'Oregon'
+      },
+      social: {
+        twitter: 'michellejlevine',
+        github: 'michellejl',
+        instagram: 'spacecadetmj',
+        linkedin: 'michellejl',
       },
       community: {
         group1: {
