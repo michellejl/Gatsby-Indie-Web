@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import Nav from './nav'
-
 const Header = ({ siteTitle, authorName, authorTitle }) => (
   <div>
     <div>
@@ -12,7 +10,6 @@ const Header = ({ siteTitle, authorName, authorTitle }) => (
         </Link>
       </h1>
     </div>
-    <Nav />
   </div>
 )
 
