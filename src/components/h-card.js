@@ -1,24 +1,62 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { StaticQuery, Link } from 'gatsby'
+import styled from 'react-emotion'
 
-const HCard = ({ authorName, authorTitle }) => (
-    <div className="h-card">
-        <p>
-            <Link className="u-url" to="http://michellejl.com/">
-                <span className="p-name">
-                    { authorName }
-                </span>
-            </Link>
-        </p>
-        <p>
-            <span className="p-job-title">
-                { authorTitle }
-            </span>
-        </p>
-        <p className="p-adr h-adr">
-            <span className="p-locality">Portland</span>,&nbsp;
-            <span className="p-region">Oregon</span>
-        </p>
-    </div>
+// TODO: Move image URL to gatsby-config so all information is coming from there.
+import michelleImg from '../../static/img/michelle.png'
+
+const UserImage = styled('img')`
+  padding: 0;
+  width: 100px;
+`
+
+const HCard = ({ data }) => (
+    <StaticQuery
+        query={graphql`
+            query HCardQuery {
+                site {
+                    siteMetadata {
+                        author {
+                            name,
+                            title,
+                            siteURL,
+                            address {
+                                city,
+                                state
+                            }
+                        }
+                    }
+                }
+            }
+        `}
+        render={data => (
+            <div className='h-card'>
+            <UserImage src={michelleImg} alt='Illustration of Michelle' />
+                <p>
+                    <Link 
+                        className='u-url' 
+                        to={data.site.siteMetadata.author.siteURL}
+                    >
+                        <span className='p-name'>
+                            {data.site.siteMetadata.author.name}
+                        </span>
+                    </Link>
+                </p>
+                <p>
+                    <span className='p-job-title'>
+                        {data.site.siteMetadata.author.title}
+                    </span>
+                </p>
+                <p className="p-adr h-adr">
+                    <span className='p-locality'>
+                        {data.site.siteMetadata.author.address.city}
+                    </span>,&nbsp;
+                    <span className='p-region'>
+                        {data.site.siteMetadata.author.address.state}
+                    </span>
+                </p>
+            </div>
+        )}
+    />
 )
 export default HCard

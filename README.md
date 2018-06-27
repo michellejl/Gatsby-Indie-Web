@@ -29,6 +29,8 @@ This project is an expanded version of my portfolio site that will act as a home
         - [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
     - [Github](https://github.com/gatsbyjs/gatsby)
     - [Life After Layouts](https://next.gatsbyjs.org/blog/2018-06-08-life-after-layouts/)
+    - Plugins
+        - [Emotion](https://next.gatsbyjs.org/packages/gatsby-plugin-emotion/)
 - **Git**
     - [Git Tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
 - **Indie Web**
