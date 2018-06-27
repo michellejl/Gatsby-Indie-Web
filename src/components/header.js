@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-const Header = ({ siteTitle, authorName, authorTitle }) => (
+const Header = ({ siteTitle }) => (
   <div>
     <div>
       <h1>

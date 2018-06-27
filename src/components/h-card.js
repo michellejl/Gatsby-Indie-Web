@@ -48,15 +48,15 @@ const HCard = ({ data }) => (
             className='u-photo'
              />
                 <p>
-                    <Link 
+                    <a 
                         className='u-url' 
                         rel='me'
-                        to={data.site.siteMetadata.author.siteURL}
+                        href={data.site.siteMetadata.author.siteURL}
                     >
                         <span className='p-name'>
                             {data.site.siteMetadata.author.name}
                         </span>
-                    </Link>
+                    </a>
                 </p>
                 <p>
                     <span className='p-job-title'>
