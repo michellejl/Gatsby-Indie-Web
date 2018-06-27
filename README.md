@@ -31,3 +31,9 @@ This project is an expanded version of my portfolio site that will act as a home
     - [Life After Layouts](https://next.gatsbyjs.org/blog/2018-06-08-life-after-layouts/)
 - **Git**
     - [Git Tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
+- **Indie Web**
+    - Microformats
+        - h-card
+            - [h-card creator](microformats.org/code/hcard/creator)
+            - [h-card Microformats docs](http://microformats.org/wiki/h-card)
+            - [h-card Parser](http://pin13.net/mf2/)

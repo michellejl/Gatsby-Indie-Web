@@ -2,8 +2,9 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import Nav from './nav'
+import HCard from './h-card'
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, authorName, authorTitle }) => (
   <div>
     <div>
       <h1>
@@ -13,6 +14,7 @@ const Header = ({ siteTitle }) => (
       </h1>
     </div>
     <Nav />
+    <HCard authorName={authorName} authorTitle={authorTitle}/>
   </div>
 )
 
