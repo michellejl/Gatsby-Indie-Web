@@ -1,4 +1,4 @@
-# Homebase
+# Gatsby-Indie-Web
 
 This project is an expanded version of my portfolio site that will act as a homebase of sorts for my own projects. It will include things like a list of what extensions I like in my VSCode setup, or a list of bookmarks I've been meaning to go back to. 
 
@@ -12,15 +12,6 @@ This project is an expanded version of my portfolio site that will act as a home
 7. Use ```gatsby build``` to create an optimized production build for the project.
 8. Test the production build by using ```gatsby serve``` to start a local HTML server
 
-## My Development Steps:
-1. ```node --version``` should equal 10.5.x
-2. Install gatsby: ```npm install --global gatsby-cli```
-3. Create new project from gatsby-starter-blog: 
-    ```sh
-    gatsby new homebase https://github.com/gatsbyjs/gatsby-starter-default#v2
-    ```
-4. Run project in development mode: ```gatsby develop```
-
 # Resources
 
 ## Links I Found Helpful While Building:
@@ -29,8 +20,12 @@ This project is an expanded version of my portfolio site that will act as a home
         - [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
     - [Github](https://github.com/gatsbyjs/gatsby)
     - [Life After Layouts](https://next.gatsbyjs.org/blog/2018-06-08-life-after-layouts/)
+    - [Adding Pages in Markdown](https://next.gatsbyjs.org/docs/adding-markdown-pages/)
     - Plugins
         - [Emotion](https://next.gatsbyjs.org/packages/gatsby-plugin-emotion/)
+        - [Gatsby-Source-Filesystem](https://next.gatsbyjs.org/packages/gatsby-source-filesystem/#gatsby-source-filesystem)
+- **Contentful**
+    - [Gatsby with Contentful CMS](https://codebushi.com/gatsby-with-contentful-cms/)
 - **Git**
     - [Git Tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
 - **Indie Web**
@@ -39,5 +34,8 @@ This project is an expanded version of my portfolio site that will act as a home
             - [h-card creator](microformats.org/code/hcard/creator)
             - [h-card Microformats docs](http://microformats.org/wiki/h-card)
             - [h-card Parser](http://pin13.net/mf2/)
+    - Post Types
+        - [Types of Posts](https://indieweb.org/posts#Types_of_Posts)
+    - [Indie Mark](https://indieweb.org/IndieMark) --> How Indie is your site?
 
 

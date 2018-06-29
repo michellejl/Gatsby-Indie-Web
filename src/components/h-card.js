@@ -1,5 +1,5 @@
 import React from 'react'
-import { StaticQuery, Link } from 'gatsby'
+import { StaticQuery } from 'gatsby'
 import styled from 'react-emotion'
 import { withPrefix } from 'gatsby-link'
 

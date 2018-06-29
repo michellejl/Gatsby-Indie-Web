@@ -13,7 +13,7 @@ dd4d1c2e2da4f640380ce358703a3ca712ca5be9
 
 ## 0.0.1
 June 27, 2018 <br />
-ad783257093e67a72b826898243832de5b093245
+a8cc8b2845339b4a63108941a372f367c6f07605
 
 ### Updates:
 - Creating documentation to try and keep project easy for me to maintain over time in a consistant way.
@@ -21,3 +21,10 @@ ad783257093e67a72b826898243832de5b093245
 - Read blog post: [Life After Layouts](https://next.gatsbyjs.org/blog/2018-06-08-life-after-layouts/) and started setting up site skeleton.
 - Setup h-card component using indieweb standards.
 - Added a ```HOWTO.md``` document to map out steps for someone to update h-card content. (Will eventually include more tutorials / how-tos)
+
+***
+
+## 0.0.2
+June 29, 2018
+
+### Updates:
