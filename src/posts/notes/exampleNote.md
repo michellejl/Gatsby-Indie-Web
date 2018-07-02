@@ -1,5 +1,5 @@
 ---
-path: "/notes/note-2018-08-29"
+path: "/notes/note-2018-06-29"
 date: "2018-06-29"
 ---
 

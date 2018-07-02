@@ -1,6 +1,5 @@
 import React from "react"
-import NotePostLink from "./note-post-link"
-import { StaticQuery } from 'gatsby'
+import { StaticQuery, Link } from 'gatsby'
 
 const NotesList = ({ data }) => (
   <StaticQuery
@@ -10,7 +9,7 @@ const NotesList = ({ data }) => (
           edges {
             node {
               id
-              excerpt(pruneLength: 250)
+              excerpt(pruneLength: 50)
               frontmatter {
                 date(formatString: "MMMM Do, YYYY")
                 path
@@ -21,46 +20,24 @@ const NotesList = ({ data }) => (
       }
     `}
 
+    
+
     render = { data => (
       <div>
-      Posts: {data.allMarkdownRemark.totalCount}
+        {data.allMarkdownRemark.edges.map(
+          post => (
+            <div className="NotePost">
+              {post.node.frontmatter.date}:&nbsp;
+              <Link to={post.node.frontmatter.path}>
+                {post.node.excerpt}
+              </Link>
+            </div>
+          )
+        )}
 
       </div>
     )}
   />
 )
 
-
-
-
-
-
-// {
-//   console.log('data: ');
-//   console.log(data);
-//   return (
-//     <div>
-//       Note List
-//     </div>
-//   )
-// }
-
 export default NotesList
-
-// export const pageQuery = graphql`
-//   query NoteListQuery {
-//     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
-//       edges {
-//         node {
-//           id
-//           excerpt(pruneLength: 250)
-//           frontmatter {
-//             date
-//             path
-//           }
-//         }
-//       }
-//     }
-//   }
-// `
-

@@ -8,9 +8,12 @@ This project is an expanded version of my portfolio site that will act as a home
 3. Clone or download project and ```cd``` into it.
 4. Run ```npm install```
 5. Run ```gatsby develop```
-6. Go to ```localhost:8000``` in a browser to see site. Saved changes will live reload in the browser.
-7. Use ```gatsby build``` to create an optimized production build for the project.
-8. Test the production build by using ```gatsby serve``` to start a local HTML server
+    - Go to ```localhost:8000``` in a browser to see site. Saved changes will live reload in the browser.
+6. Use ```gatsby build``` to create an optimized production build for the project.
+    - Test the production build by using ```gatsby serve``` to start a local HTML server
+
+# Post Types
+Find out more about the different post types that are included as part of this starter by looking at how to use them in the [HOWTO.md](HOWTO.md/#post-types) file.
 
 # Resources
 
