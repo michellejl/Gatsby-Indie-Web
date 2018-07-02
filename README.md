@@ -24,6 +24,7 @@ This project is an expanded version of my portfolio site that will act as a home
     - Plugins
         - [Emotion](https://next.gatsbyjs.org/packages/gatsby-plugin-emotion/)
         - [Gatsby-Source-Filesystem](https://next.gatsbyjs.org/packages/gatsby-source-filesystem/#gatsby-source-filesystem)
+        - [Gatsby-Transformer-Remark](https://next.gatsbyjs.org/packages/gatsby-transformer-remark/)
 - **Contentful**
     - [Gatsby with Contentful CMS](https://codebushi.com/gatsby-with-contentful-cms/)
 - **Git**
