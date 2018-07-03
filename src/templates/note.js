@@ -4,15 +4,17 @@ export default function Template({ data }) {
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
   return (
-    <div className="note-post-container">
-      <div className="note-post">
-        <h2>{frontmatter.date}</h2>
+      <div className="note-post h-entry">
+        <h2>
+          <time className="dt-published">{frontmatter.date}</time>
+           &nbsp;|&nbsp;<a href={frontmatter.authorHome} className="u-author">{frontmatter.author}</a>
+        </h2>
         <div
-          className="note-post-content"
+          className="note-post-content p-name p-content"
           dangerouslySetInnerHTML={{ __html: html }}
         />
+        
       </div>
-    </div>
   )
 }
 
@@ -23,6 +25,8 @@ export const pageQuery = graphql`
       frontmatter {
         date
         path
+        author
+        authorHome
       }
     }
   }
