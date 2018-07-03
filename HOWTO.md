@@ -113,18 +113,40 @@ _____
     ```
 **NOTE:** Make sure you also do these things: [How to set up web sign in on your own domain on indieweb.org](https://indieweb.org/How_to_set_up_web_sign-in_on_your_own_domain)
 
+_____
+
 # <a name="post-types"></a>Post Types
 - [Notes](#post-type-note)
+- [Articles](#post-type-article)
+- [Add a New Post Type](#post-type-add-new)
 
 ## <a name="post-type-note"></a>Notes
 "A note is a post that is typically short unstructured* plain text, written & posted quickly, that has its own permalink page.  (* Though unstructured meaning without a heading/title or any other explicit structure, notes can include several lines of text or even lists using "*" or numerical markers due to common whitespace support.)" - [indieweb.org/note](https://indieweb.org/note)
 
 ### Add a new note post: 
-This process is as simple as adding a new markdown file to the ```src/posts/notes``` folder. The markdown file has 2 required pieces of frontmatter. After that, enter your note using markdown formatting. Path is the URL you want your note post to be available at. Date is the date you are publishing the note.
+This process is as simple as adding a new markdown file to the ```src/posts/notes``` folder. The markdown file has 4 required pieces of frontmatter. After that, enter your note using markdown formatting. Path is the URL you want your note post to be available at. Date is the date you are publishing the note. Author and Author Home are used to attribute the post to you.
 ```
 ---
 path: "/notes/note-2018-06-29"
 date: "2018-06-29"
+author: "MichelleJL"
+authorHome: "http://michellejl.com
 ---
 Note content goes here. 
 ```
+
+## <a name="post-type-article"></a>Articles
+"An article is a kind of post that typically has more structure than a simple note. Articles usually have a name (title), multiple paragraphs, and often subheadings, blockquotes, and a footer of references or citations." - [indieweb.org/article](https://indieweb.org/article)
+
+### Add a new article post: 
+
+
+
+## <a name="post-type-add-new"></a>Add New Post Type
+ *Note:* I recommend looking at the code inside of the note version of all of these files for the most basic example of what should be included in each.
+1. Create new template file at ```src/templates/newPostType.js```
+2. Create new component file at ```src/componenets/newPostType-list.js```
+3. Create new folder to hold post type in ```src/posts/newPostType```
+    - This is where you will add markdown files of this new post type.
+    - This will cause an *error* if you don't add a path to the frontmatter since ```gatsby-node.js``` creates the HTML pages for the markdown by using the path. 
+4. Add new post location to ```gatsby-config.js```

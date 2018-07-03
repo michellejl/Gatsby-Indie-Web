@@ -40,14 +40,17 @@ I'm not really expecting anyone who isn't me to write code for this, but I know 
     ```
 
 # <a name="later"></a>Things I Want to Add
-- Add time to the date post time for post types: notes.
+- Post Type: Notes
+    - Add time to the date
+    - Set up [POSSE to Twitter](https://indieweb.org/Twitter#POSSE_to_Twitter)
+    - Add Likes / Comments / Shares
 
-Post types to add:
-- 📔 note (DONE: 7/2/18)
-- 📄 article
-- 💬 reply
-- 💌 rsvp
-- 📷 photo
-- 👍 like (or favorite)
-- 🎥 video
-- ♺ repost
+Post types to add:<br />
+[x] 📔 note<br />
+[] 📄 article<br />
+[] 💬 reply<br />
+[] 💌 rsvp<br />
+[] 📷 photo<br />
+[] 👍 like (or favorite)<br />
+[] 🎥 video<br />
+[] ♺ repost<br />
