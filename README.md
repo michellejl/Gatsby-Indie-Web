@@ -12,8 +12,10 @@ This project is an expanded version of my portfolio site that will act as a home
 6. Use ```gatsby build``` to create an optimized production build for the project.
     - Test the production build by using ```gatsby serve``` to start a local HTML server
 
+Check out [CONTRIBUTING.md](/CONTRIBUTING.md) for more information on what is currently in progress, and what I want done in the future. Also includes a list of current known issues.
+
 # Post Types
-Find out more about the different post types that are included as part of this starter by looking at how to use them in the [HOWTO.md](HOWTO.md/#post-types) file.
+Find out more about the different post types that are included as part of this starter by looking at how to use them in the [HOWTO.md](HOWTO.md/#post-types) file. Indieweb.org also has a great resource (Where most of my information comes from) on different post types that is worth checking out. It can be found [here](https://indieweb.org/posts#Types_of_Posts).
 
 # Resources
 
@@ -45,6 +47,9 @@ Find out more about the different post types that are included as part of this s
             - [h-card Parser](http://pin13.net/mf2/)
     - Post Types
         - [Types of Posts](https://indieweb.org/posts#Types_of_Posts)
+    - POSSE 
+        - [What is POSSE: Publish (on your) Own Site, Syndicate Elsewhere](https://indieweb.org/POSSE)
+        - [Twitter](https://indieweb.org/Twitter#POSSE_to_Twitter)
     - [Indie Mark](https://indieweb.org/IndieMark) --> How Indie is your site?
 
 

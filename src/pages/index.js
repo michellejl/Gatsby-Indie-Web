@@ -9,7 +9,7 @@ const IndexPage = () => (
     <div>
       <h1>Home</h1>
       <p>
-        This page is currently showing examples of the different components.
+        This page shows examples of the different components.
       </p>
       <div>
         <h2>Notes:</h2>

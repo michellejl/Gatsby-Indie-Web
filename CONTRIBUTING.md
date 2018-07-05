@@ -40,17 +40,23 @@ I'm not really expecting anyone who isn't me to write code for this, but I know 
     ```
 
 # <a name="later"></a>Things I Want to Add
-- Post Type: Notes
-    - Add time to the date
-    - Set up [POSSE to Twitter](https://indieweb.org/Twitter#POSSE_to_Twitter)
-    - Add Likes / Comments / Shares
+**Issues:**
+- StaticQuery gets stuck. Known Issue with Gatsby v2 [issue](https://github.com/gatsbyjs/gatsby/issues/6032) Changing content of index.js seems to be a temporary fix
 
 Post types to add:<br />
 [x] 📔 note<br />
-[] 📄 article<br />
+[x] 📄 article<br />
 [] 💬 reply<br />
 [] 💌 rsvp<br />
 [] 📷 photo<br />
 [] 👍 like (or favorite)<br />
 [] 🎥 video<br />
 [] ♺ repost<br />
+
+**All Post Types**
+- Add Likes / Comments / Shares
+- Update list order to list newest post first
+- Add time to the date
+
+**Post Type: Notes**
+- Set up [POSSE to Twitter](https://indieweb.org/Twitter#POSSE_to_Twitter)
