@@ -30,7 +30,7 @@ const ArticlesList = ({ data }) => (
       <div>
         {data.allMarkdownRemark.edges.map(
           post => (
-            <div className="NotePost">
+            <div className="ArticlePost">
               {post.node.frontmatter.date}:&nbsp;
               <Link to={post.node.frontmatter.path}>
                 {post.node.excerpt}

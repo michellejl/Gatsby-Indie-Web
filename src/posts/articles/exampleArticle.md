@@ -1,4 +1,5 @@
 ---
+title: "Example Article"
 path: "/article/example-article"
 date: "2018-07-02"
 author: ""
@@ -8,7 +9,9 @@ summary: "An article is a kind of post that typically has more structure than a 
 
 ### What is an article?
 <blockquote>
-"An article is a kind of post that typically has more structure than a simple note. Articles usually have a name (title), multiple paragraphs, and often subheadings, blockquotes, and a footer of references or citations." - [indieweb.org/article](https://indieweb.org/article)</blockquote>
+"An article is a kind of post that typically has more structure than a simple note. Articles usually have a name (title), multiple paragraphs, and often subheadings, blockquotes, and a footer of references or citations." </blockquote>
+
+--> [indieweb.org/article](https://indieweb.org/article)
 
 ### Another Subheading
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitor egestas sagittis. Nunc semper luctus laoreet. Morbi blandit mollis viverra. Duis vitae nisi at enim egestas commodo et a arcu. Nam tincidunt mollis justo nec elementum. Quisque sollicitudin mauris et enim ullamcorper, sed feugiat arcu tempor. Duis sagittis sed sapien non consequat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam in mauris ac dolor consectetur blandit. Nunc vel tristique turpis. Sed laoreet tempor arcu, eu bibendum nibh tempor at. Sed vulputate erat id viverra posuere. Nunc porttitor tortor vel dui faucibus, id iaculis enim ornare. Donec porta dolor nec tortor sodales sagittis. Sed congue sapien ut tincidunt rhoncus. Phasellus a leo nec enim pharetra molestie.
