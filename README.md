@@ -24,10 +24,15 @@ Find out more about the different post types that are included as part of this s
     - [Github](https://github.com/gatsbyjs/gatsby)
     - [Life After Layouts](https://next.gatsbyjs.org/blog/2018-06-08-life-after-layouts/)
     - [Adding Pages in Markdown](https://next.gatsbyjs.org/docs/adding-markdown-pages/)
+    - [Example Code for Gatsbyjs.org: gatsby-node.js](https://github.com/gatsbyjs/gatsby/blob/master/www/gatsby-node.js)
     - Plugins
         - [Emotion](https://next.gatsbyjs.org/packages/gatsby-plugin-emotion/)
         - [Gatsby-Source-Filesystem](https://next.gatsbyjs.org/packages/gatsby-source-filesystem/#gatsby-source-filesystem)
         - [Gatsby-Transformer-Remark](https://next.gatsbyjs.org/packages/gatsby-transformer-remark/)
+- **GraphQL**
+    - [Queries and Mutations](http://graphql.github.io/learn/queries/)
+    - [Regex Builder](https://regexr.com/)
+    - [Question: How do I query based on gatsby-source-filesystem name?](https://github.com/gatsbyjs/gatsby/issues/1634)
 - **Contentful**
     - [Gatsby with Contentful CMS](https://codebushi.com/gatsby-with-contentful-cms/)
 - **Git**
