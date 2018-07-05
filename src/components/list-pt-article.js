@@ -5,10 +5,16 @@ const ArticlesList = ({ data }) => (
   <StaticQuery
     query={graphql`
       query ArticleListQuery {
-        allMarkdownRemark {
+        allMarkdownRemark(
+          # This allows us to just search for documents in the articles folder under posts
+          filter: { fileAbsolutePath: { regex: "/articles/" } } 
+        ) {
           edges {
             node {
-              id
+              wordCount {
+                words
+              }
+              fileAbsolutePath
               excerpt(pruneLength: 50)
               frontmatter {
                 date(formatString: "MMMM Do, YYYY")
