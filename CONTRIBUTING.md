@@ -2,6 +2,8 @@
 
 I'm not really expecting anyone who isn't me to write code for this, but I know that me a week from now will have forgotten all the best practices I wanted to use today, so attempting to keep things consistant with documentation!
 
+[Things I Want to Add](#later)
+
 ## Git Commits
 1. Add changed files to staging: 
     ```sh
@@ -36,3 +38,19 @@ I'm not really expecting anyone who isn't me to write code for this, but I know 
     ```sh
     git push origin --tags
     ```
+
+# <a name="later"></a>Things I Want to Add
+- Post Type: Notes
+    - Add time to the date
+    - Set up [POSSE to Twitter](https://indieweb.org/Twitter#POSSE_to_Twitter)
+    - Add Likes / Comments / Shares
+
+Post types to add:<br />
+[x] 📔 note<br />
+[] 📄 article<br />
+[] 💬 reply<br />
+[] 💌 rsvp<br />
+[] 📷 photo<br />
+[] 👍 like (or favorite)<br />
+[] 🎥 video<br />
+[] ♺ repost<br />
