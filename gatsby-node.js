@@ -34,6 +34,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       return Promise.reject(result.errors)
     }
 
+    // Create Article Page
     const articlePost = _.filter(
       result.data.allMarkdownRemark.edges,
       edge => {
@@ -43,12 +44,28 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         }
       }
     )
-
-    // Create Article Page
     articlePost.forEach((edge) => {
       createPage({
         path: `${edge.node.frontmatter.path}`,
         component: articlePostTemplate,
+        context: {}, // additional data can be passed via context
+      })
+    })
+
+    // Create Note Page
+    const notePost = _.filter(
+      result.data.allMarkdownRemark.edges,
+      edge => {
+        const fileAbsolutePath = _.get(edge, 'node.fileAbsolutePath')
+        if (_.includes(fileAbsolutePath, '/notes/')) {
+          return edge
+        }
+      }
+    )
+    notePost.forEach((edge) => {
+      createPage({
+        path: `${edge.node.frontmatter.path}`,
+        component: notePostTemplate,
         context: {}, // additional data can be passed via context
       })
     })

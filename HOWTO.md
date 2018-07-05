@@ -7,6 +7,9 @@ ToC:
 - [rel="me"](#rel-me)
     - [Add more social links](#add-social)
 - [Post Types](#post-types)
+    - [Notes](#post-type-note)
+    - [Articles](#post-type-article)
+    - [Add a New Post Type](#post-type-add-new)
 
 _____
 
@@ -149,4 +152,28 @@ Note content goes here.
 3. Create new folder to hold post type in ```src/posts/newPostType```
     - This is where you will add markdown files of this new post type.
     - This will cause an *error* if you don't add a path to the frontmatter since ```gatsby-node.js``` creates the HTML pages for the markdown by using the path. 
-4. Add new post location to ```gatsby-config.js```
+4. Add new post location to ```gatsby-node.js``` (replace new with the name of the new post type you are working on)
+    - Near the top you will create a new const for the location of the template type you created: 
+        ```js
+        const newPostTemplate = path.resolve(`src/templates/new.js`)
+        ```
+    - Near the bottom create a new const to filter the posts to just include the new type, and run a new createPage() to actually create the pages.
+        ```js
+        // Create Note Page
+        const newPost = _.filter(
+            result.data.allMarkdownRemark.edges,
+            edge => {
+                const fileAbsolutePath = _.get(edge, 'node.fileAbsolutePath')
+                if (_.includes(fileAbsolutePath, '/new/')) {
+                return edge
+                }
+            }
+        )
+        newPost.forEach((edge) => {
+            createPage({
+                path: `${edge.node.frontmatter.path}`,
+                component: newPostTemplate,
+                context: {}, // additional data can be passed via context
+            })
+        })
+        ```
