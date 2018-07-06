@@ -142,7 +142,7 @@ Note content goes here.
 "An article is a kind of post that typically has more structure than a simple note. Articles usually have a name (title), multiple paragraphs, and often subheadings, blockquotes, and a footer of references or citations." - [indieweb.org/article](https://indieweb.org/article)
 
 ### Add a new article post: 
-
+This 
 
 
 ## <a name="post-type-add-new"></a>Add New Post Type

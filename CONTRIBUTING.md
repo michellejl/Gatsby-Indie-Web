@@ -57,6 +57,7 @@ Post types to add:<br />
 - Add Likes / Comments / Shares
 - Update list order to list newest post first
 - Add time to the date
+- Set up logic for potentially missing frontmatter
 
 **Post Type: Notes**
 - Set up [POSSE to Twitter](https://indieweb.org/Twitter#POSSE_to_Twitter)
